@@ -1,5 +1,0 @@
-INDEX VERSION 1.130+/home/datduyn/OneDrive/college/unlCourses/csce156/csce156-lab/.metadata/.plugins/org.eclipse.jdt.core
-2336628444.index
-3959484006.index
-1119755344.index
-1199704226.index
