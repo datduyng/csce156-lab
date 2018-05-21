@@ -1,0 +1,12 @@
+War and Peace,Leo Tolstoy,978-0199232765,1869
+Data Structures & Problem Solving Using Java,Mark Weiss,0-321-54140-5,2011-03-10
+The Naked & The Dead,Norman Mailer,978-0312265052,1948
+Barbary Shore,Norman Mailer,0375700390,1951
+Discrete Mathematics and Its Applications,Kenneth Rosen,9780073229720,1998-12-11
+The Adventures of Tom Sawyer,Mark Twain,9780143039563,1876
+Adventures of Huckleberry Finn,Mark Twain,,1885
+American Gods,Neil Gaiman,0-380-97365-0,2002-04-30
+The Colour of Magic,Terry Pratchett,0-86140-324-X,1983
+Mort,Terry Pratchett,0-575-04171-4,1987
+The Hitchhiker's Guide to the Galaxy,Douglas Adams,978-0345391803,1979
+Dirk Gently's Holistic Detective Agency,Douglas Adams,0-671-69267-4,1987-05

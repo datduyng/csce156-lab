@@ -1,0 +1,7 @@
+2018-05-18 14:31:46,161 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2018-05-18 14:32:51,736 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2018-05-18 14:34:37,400 [Worker-9] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2018-05-19 08:48:58,965 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2018-05-20 18:31:14,453 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2018-05-20 18:36:21,798 [ModalContext] INFO  o.e.jgit.transport.TransportHttp - URI 'https://git.unl.edu/csce-156/Lab04': following HTTP redirect #0  https://git.unl.edu/csce-156/Lab04/ -> https://git.unl.edu/csce-156/Lab04.git/
+2018-05-20 18:37:08,665 [ModalContext] INFO  o.e.jgit.transport.TransportHttp - URI 'https://git.unl.edu/csce-156/Lab04': following HTTP redirect #0  https://git.unl.edu/csce-156/Lab04/ -> https://git.unl.edu/csce-156/Lab04.git/
