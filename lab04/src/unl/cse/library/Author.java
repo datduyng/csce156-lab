@@ -2,12 +2,12 @@ package unl.cse.library;
 
 public class Author {
 	
-	private String firstName;   
-	private String lastName;
+	public String firstName;   
+	public String lastName;
 	
 
 	//constructor
-	public Author(String firstName, String LastName) {
+	public Author(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
@@ -25,7 +25,9 @@ public class Author {
 
 	public void setLastName(String lastName) {
 		//TODO:input validation for string lastName)
-		this.lastName = lastName;
+		if(lastName != null) {
+			this.lastName = lastName;
+		}
 	}
 
 	/*

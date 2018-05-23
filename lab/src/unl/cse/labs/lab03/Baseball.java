@@ -52,7 +52,7 @@ public class Baseball {
 			}
 			
 		});
-		double age = 0.0;
+		
 		System.out.println("\n\nSorted Teams: ");
 		for(Team t : teams) {
 			System.out.println(t);

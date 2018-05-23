@@ -2,8 +2,14 @@ package unl.cse.library;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+
+import org.joda.time.DateTime;
+import org.joda.time.Period;
 
 public class LibraryDemo {
 
@@ -30,15 +36,11 @@ public class LibraryDemo {
     		Author author = new Author();
     		author.setFirstName(auth[0]);
     		author.setLastName(auth[1]);
-//    		author.firstName = auth[0];
-//    		author.lastName = auth[1];
+
     		String isbn = tokens[2];
     		String publishDate = tokens[3];
     		Book b = new Book(title, author, isbn, publishDate );
-//    		b.setTitle(title);
-//    		b.setAuthor(author);
-//    		b.setISBN(isbn);
-//    		b.setPublishDate(publishDate);
+
     		lib.addBook(b);
     	}
     }
@@ -70,15 +72,22 @@ public class LibraryDemo {
     }
     
     private void printBooks(List<Book> books) {
+    	
 
     	System.out.print("\n");
-    	System.out.println(String.format("%-50s %-20s %-15s", "TITLE", "AUTHOR", "ISBN"));
+    	System.out.println(String.format("%-50s %-20s %-15s %-15s %-15s", "TITLE", "AUTHOR", "ISBN","PUBLISH DATE","AGE"));
+    	int years = 0;
+    	
+		// sort book.
+    	Collections.sort(books, new sortByTitle() );
+    	
         for (Book b : books) {
         	String formattedAuthor = null;
         	if(b.getAuthor() != null)
         		//formattedAuthor = b.getAuthor().lastName + ", " + b.getAuthor().lastName;
+        		years = new Period(b.publishDate, DateTime.now() ).getYears();
         		formattedAuthor = b.getAuthor().getStringAuthor();
-        	String line = String.format("%-50s %-20s %-15s", b.getTitle(), formattedAuthor, b.getISBN());
+        	String line = String.format("%-50s %-20s %-15s %-15s %-15s ", b.getTitle(), formattedAuthor, b.getISBN(),b.getPublishDate(),years+"");
         	System.out.println(line);
         }
         System.out.print("\n\n");
@@ -102,14 +111,6 @@ public class LibraryDemo {
         System.out.println("Enter the publication date (YYYY-MM-DD)");
         String publishDate = scanner.nextLine();
         Author author = new Author(firstName,lastName);// added constructor
-//        author.firstName = firstName;
-//        author.lastName = lastName;
-//        Book b = new Book();
-//		b.setTitle(title);
-//		b.setAuthor(author);
-//		b.setISBN(isbn);
-//		b.setPublishDate(publishDate);
-        
         Book b = new Book(title, author, isbn, publishDate );
         this.lib.addBook(b);
         return;
@@ -156,4 +157,16 @@ public class LibraryDemo {
         LibraryDemo demo = new LibraryDemo();
         demo.libraryInterface();
     }
-}
+    
+}// end class 
+
+class sortByTitle implements Comparator<Book>
+{
+    // Used for sorting in ascending order of
+    // roll number
+	
+   public int compare(Book a, Book b)
+    {
+			return a.getTitle().compareTo(b.getTitle());
+    }
+}// end class

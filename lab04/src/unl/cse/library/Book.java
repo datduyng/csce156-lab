@@ -4,10 +4,10 @@ import org.joda.time.DateTime;
 
 public class Book {
 
-    private String title;
-    private String isbn;
-    private Author author;
-    private DateTime publishDate;
+    public String title;
+    public String isbn;
+    public  Author author;
+    public  DateTime publishDate;
 
 	// constructor
 	public Book(String title, Author author, String isbn, String publishDate ) {
