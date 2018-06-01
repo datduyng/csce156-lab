@@ -15,6 +15,11 @@ public class Author {
 	public Author() {
 		/*constructor*/
 	}
+	
+	public Author(Author author) {
+		this.firstName = new String(author.firstName);
+		this.lastName = new String(author.lastName);
+	}
 
 	/**
 	 * Add mutator method to set this.firstName and this.lastName

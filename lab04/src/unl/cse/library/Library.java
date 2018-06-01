@@ -16,7 +16,7 @@ public class Library {
     }
 
     public List<Book> getCollection() {
-    	return Collections.unmodifiableList(this.bookCollection);
+    	return this.bookCollection;
     }
 
     /**

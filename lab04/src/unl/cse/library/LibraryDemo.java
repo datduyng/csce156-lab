@@ -79,7 +79,12 @@ public class LibraryDemo {
     	int years = 0;
     	
 		// sort book.
-    	Collections.sort(books, new sortByTitle() );
+    	Collections.sort(books, new Comparator<Book>() {
+    	    @Override
+    	    public int compare(Book o1, Book o2) {
+    	        return o1.getTitle().compareTo(o2.getTitle());
+    	    }
+    	});
     	
         for (Book b : books) {
         	String formattedAuthor = null;
@@ -160,13 +165,13 @@ public class LibraryDemo {
     
 }// end class 
 
-class sortByTitle implements Comparator<Book>
-{
-    // Used for sorting in ascending order of
-    // roll number
-	
-   public int compare(Book a, Book b)
-    {
-			return a.getTitle().compareTo(b.getTitle());
-    }
-}// end class
+//class sortByTitle implements Comparator<String>
+//{
+//    // Used for sorting in ascending order of
+//    // roll number
+//	@Override
+//   public int compare(Book a, Book b)
+//    {
+//			return a.getTitle().compareTo(b.getTitle());
+//    }
+//}

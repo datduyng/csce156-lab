@@ -16,6 +16,13 @@ public class Book {
 		this.author = author;
 		setPublishDate(publishDate);
 	}
+	
+	public Book(Book b) {
+		this.title = new String(b.getTitle());
+		this.isbn = new String(b.getISBN());
+		this.author = new Author(b.getAuthor());
+		setPublishDate(b.getPublishDate());
+	}
     	
     /**
      * Getter method for author
