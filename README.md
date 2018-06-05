@@ -17,4 +17,5 @@
 ## Lab 06 
 ## Lab 07 
 - on progress (4/6/18)
+- still get error con casting Serialiable to CompanyList 
 
