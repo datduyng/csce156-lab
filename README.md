@@ -13,3 +13,8 @@
 - Done 
 ## Lab04 
 - todo: finish the advance part of the lab
+## Lab05 
+## Lab 06 
+## Lab 07 
+- on progress (4/6/18)
+
