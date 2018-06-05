@@ -1,0 +1,25 @@
+{
+ "TemporaryEmployee": {
+  "perHourRate": 12.0,
+  "weeklyHrs": 23.0,
+  "id": 0,
+  "firstName": "Smith",
+  "lastName": "John",
+  "productSolds": [
+    {
+      "productCode": "qwe",
+      "countItemSold": 3,
+      "cost": 2.5
+    },
+    {
+      "productCode": "123",
+      "countItemSold": 10,
+      "cost": 13.0
+    },
+    {
+      "productCode": "asd",
+      "countItemSold": 20,
+      "cost": 23.2
+    }
+  ]
+}}
