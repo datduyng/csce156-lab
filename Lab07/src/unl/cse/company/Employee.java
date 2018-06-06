@@ -107,5 +107,20 @@ public abstract class Employee  implements Serializable,CompanyPortfolio{
 		}
 		
 	}
+	
+	@Override
+	public void computeProductivity() {
+		// TODO Auto-generated method stub
+		double employeeProductivity = this.computeSalary() / 168.0; //number of hour per weekt
+//		double performanceProductivity = 0.0;
+//		
+//		// loop through the list of product count total cost then * total item sold. / number of hrs in week.
+//		for(Product nextProductSold : this.getProductSolds()) {
+//			performanceProductivity += nextProductSold.getCost() * nextProductSold.getCountItemSold() / 168.0 ; // total number of hrs per week.
+//		}
+		
+		System.out.println("employeeProductivity (over last week): " + employeeProductivity);
+		//System.out.println("performanceProductivity (over last week): " + performanceProductivity);
+	}
 
 }

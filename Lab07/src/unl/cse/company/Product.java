@@ -7,7 +7,7 @@ import java.io.IOException;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-public class Product implements Serializable{
+public class Product implements Serializable,CompanyPortfolio{
 	
 	private String productCode;
 	private int countItemSold;
@@ -86,6 +86,20 @@ public class Product implements Serializable{
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
+		
+	}
+
+
+
+	@Override
+	public void computeProductivity() {
+		// TODO Auto-generated method stub
+		double performanceProductivity = 0.0;
+		
+		// loop through the list of product count total cost then * total item sold. / number of hrs in week.
+		
+			performanceProductivity = this.getCost() * this.getCountItemSold() / 168.0 ; // total number of hrs per week.
+			System.out.println("performanceProductivity (over last week): " + performanceProductivity);
 		
 	}
 
